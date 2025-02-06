@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: #020617;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+            margin-bottom: 40px;
+        
+        }
+
+        .thread-item {
+            padding: 15px;
+            border: 1px solid #1d9bf0;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            background-color: #000;
+            text-align: center;
+            color: #1d9bf0;
+            text-decoration: none;
+            font-size: 2em;
+        }
+
+        .thread-item:hover {
+            background-color: rgba(29, 155, 240, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .user-count {
+            color: #8899a6;
+            font-size: 3em;
+            margin-top: 8px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 15px 0;
+            border-top: 2px solid #1d9bf0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1d9bf0;
+            font-size: 2.8em;
+            margin-bottom: 8px;
+            margin-top:120px;
+        }
+        span{
+            font-size: 1.2em;
+        }
+        #footerLove{
+            color: red;
+        }
+        .createNew{
+            color: #1d9bf0;
+            text-decoration: none;
+            font-size: 2em;
+            padding: 15px;
+            border: 1px solid #1d9bf0;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            background-color: #000;
+            text-align: center;
+            margin-left: 10px;
+        }
+        .createNew:hover {
+            background-color: rgba(29, 155, 240, 0.1);
+            transform: translateY(-2px);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>User Management System</h1>
+            <div class="user-count">Total Users: <span style="color: #1d9bf0;"><b><%= count %></b></span></div>
+        </div>
+        <a  class="thread-item" href="http://localhost:8080/users">View all <b>Users</b></a>
+        <a  class="createNew" href="http://localhost:8080/users/add"><b>Create <i>NEW</i> </b></a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Made with LOVE <span id="footerLove">&#9829</span> | Created by Dharmik Radadiya</h3>
+        </div>
+    </footer>
+</body>
+</html>

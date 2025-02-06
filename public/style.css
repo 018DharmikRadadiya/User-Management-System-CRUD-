@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #15202b;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #192734;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    color: #1da1f2;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#create-tweet-btn {
+    background-color: #1da1f2;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#create-tweet-btn:hover {
+    background-color: #1a91da;
+}
+
+#create-tweet-btn:active {
+    background-color: #1780c1;
+}
+
+.main-content {
+    background-color: #192734;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tweets h2 {
+    border-bottom: 1px solid #38444d;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.tweet {
+    background-color: #253341;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+.tweet-text {
+    margin: 0;
+}
+.tweet-text-uname{
+    font-style: italic;
+}
+
+.tweet-actions {
+    margin-top: 10px;
+    display: flex;
+}
+
+a,button {
+    background-color: transparent;
+    border: 1px solid #1da1f2;
+    color: #1da1f2;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 2px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #1a91da;
+    color: #ffffff;
+}
+
+a:hover {
+    background-color: #1a91da;
+    color: #ffffff;
+}
+
+button{
+    padding: 8px 10px;
+    margin-left: 5px;
+}
+
+
+
